@@ -139,17 +139,6 @@ El proyecto está dividido en siete archivos, cada uno con una responsabilidad b
 | [replicas.py](../replicas.py)                     | Ejecución de múltiples réplicas y agregación estadística                |
 | [poblado_simulacion.py](../poblado_simulacion.py) | Punto de entrada                                                        |
 
-###  La clase `Persona`
-
-Cada poblador es una instancia de `Persona` con los siguientes atributos:
-
-- **Identidad**: `id`, `sexo`, `edad_meses`, `viva`.
-- **Estado de pareja**: `pareja` (referencia bidireccional a otra `Persona`), `desea_pareja`, `en_duelo`, `fin_duelo_mes`.
-- **Memoria de rango**: `_rango_deseo_actual`, usado para detectar cuándo la persona cambia de rango etario y disparar una nueva evaluación del deseo de pareja.
-- **Reproducción**: `hijos_deseados`, `hijos_tenidos`.
-- **Embarazo** (sólo mujeres): `embarazada`, `mes_concepcion`.
-
-La persona expone métodos para envejecer (incrementar la edad y reevaluar deseos si cambió de rango), morir (con propagación del estado de viudez a la pareja sobreviviente), iniciar duelo y terminar duelo.
 
 ### El bucle principal
 
