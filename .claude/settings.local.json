@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from simulacion import SimulacionPoblado; from replicas import ejecutar_replicas; sim = SimulacionPoblado\\(n_hombres=10, n_mujeres=10, seed=1\\); print\\('Import OK, personas iniciales:', len\\(sim.personas\\)\\)\")",
+      "Bash(python poblado_simulacion.py)",
+      "Bash(python -X utf8 poblado_simulacion.py)"
+    ]
+  }
+}
